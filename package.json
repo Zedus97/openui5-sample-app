@@ -14,15 +14,25 @@
 		"build-self-contained": "ui5 build self-contained -a --clean-dest",
 		"serve-dist": "ws --compress -d dist"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@ui5/cli": "^2.14.14",
 		"eslint": "^8.26.0",
+		"jshue": "^2.1.1",
 		"karma": "^6.4.1",
 		"karma-chrome-launcher": "^3.1.1",
 		"karma-coverage": "^2.2.0",
 		"karma-ui5": "^2.4.0",
 		"local-web-server": "^5.2.1",
-		"rimraf": "^3.0.2"
+		"node-hue-api": "5.0.0-beta.14",
+		"rimraf": "^3.0.2",
+		"ui5-tooling-modules": "^0.7.0"
+	},
+	"ui5": {
+		"dependencies": [
+			"ui5-tooling-modules"
+		]
+	},
+	"dependencies": {
+		"node-hue-api": "^5.0.0-beta.14"
 	}
 }
